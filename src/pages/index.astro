@@ -1,11 +1,13 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro';
 
-import FileDrop from '@/components/FileDrop.tsx'
+import FileDrop from '@/components/FileDrop.tsx';
 ---
 
 <BaseLayout>
-  <main class="min-h-screen w-screen overflow-x-hidden flex flex-1 justify-center items-center">
+  <main
+    class="flex min-h-screen w-screen flex-1 items-center justify-center overflow-x-hidden"
+  >
     <FileDrop client:visible />
   </main>
 </BaseLayout>
